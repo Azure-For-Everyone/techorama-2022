@@ -16,7 +16,15 @@ Before you can get started hacking the challenge, you first need to throw the di
 
 ## 2. Open the exercise
 
-Clone the repository `git clone https://github.com/Azure-For-Everyone/techorama-2022` , and make a pull request. Open the directory with Visual Studio Code (or your favourite IDE) and install the libraries using `npm install`.
+Fork the repository `https://github.com/Azure-For-Everyone/techorama-2022`, give it your own name (and company name).
+
+![Fork](./images/fork.png)
+
+![Forking into repo](./images/fork2.png)
+
+Once done clone the repository to your local system, and open the directory with Visual Studio Code (or your favourite IDE) and install the libraries using `npm install`.
+
+![Clone](./images/clone.png)
 
 ## 3. Solve the challenge
 
