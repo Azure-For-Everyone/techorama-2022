@@ -14,16 +14,18 @@ describe("Color Code Converter", function() {
             expect(greenHex).to.equal("00ff00");
             expect(blueHex).to.equal("0000ff");
         });
-
-        // specification for RGB to HEX converter   
+    });
+     
+    describe("Hex to RGB conversion", function() {
+        // specification for HEX to RGB converter
         it("converts the basic colors", function() {
-            var redHex   = converter.rgbToHex(255, 128, 0);
-            var greenHex = converter.rgbToHex(128, 255, 0);
-            var blueHex  = converter.rgbToHex(128, 0, 255);
+            var red   = converter.hexToRgb("ff0000");
+            var green = converter.hexToRgb("00ff00");
+            var blue  = converter.hexToRgb("0000ff");
 
-            expect(redHex).to.equal("ff8000");
-            expect(greenHex).to.equal("80ff00");
-            expect(blueHex).to.equal("8000ff");
+            expect(red).to.deep.equal([255, 0, 0]);
+            expect(green).to.deep.equal([0, 255, 0]);
+            expect(blue).to.deep.equal([0, 0, 255]);
         });
     });
 });

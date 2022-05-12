@@ -1,7 +1,7 @@
 {
-  "name": "exercise-1",
+  "name": "exercise-4",
   "version": "1.0.0",
-  "description": "The first exercise of the coding challenge",
+  "description": "The fourth exercise of the coding challenge",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec"
