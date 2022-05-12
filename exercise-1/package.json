@@ -4,7 +4,7 @@
   "description": "The first exercise of the coding challenge",
   "main": "index.js",
   "scripts": {
-    "test": "nyc --reporter=cobertura --reporter=html --reporter=text mocha --timeout 10000 --reporter mocha-multi-reporters --reporter-options configFile=test/config.json"
+    "test": "mocha --exit"
   },
   "author": "",
   "license": "ISC",

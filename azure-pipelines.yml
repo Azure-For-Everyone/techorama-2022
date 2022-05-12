@@ -20,7 +20,6 @@ steps:
 
 - script: |
     cd exercise-1
-    npm install -g mocha
     npm install
     npm run test
   displayName: 'npm install and test'
