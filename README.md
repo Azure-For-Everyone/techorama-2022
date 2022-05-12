@@ -30,6 +30,8 @@ Once done clone the repository to your local system, open the directory an selec
 
 ## 3. Solve the challenge
 
+Within each exercise a `README.md` file is located describing the problem statement and challenge. By reading this you will receive some hints how to solve the challenge.
+
 Look into the `app` folder of your exercise, and try running the `npm test` command in your terminal. Ooooh oooh, things don't work, go and fix it ;).
 
 ![Npm test](./images/npm-test.png)
