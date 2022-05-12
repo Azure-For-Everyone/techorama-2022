@@ -22,11 +22,8 @@ steps:
     cd exercise-1
     npm install -g mocha
     npm install
-  displayName: 'npm install'
-
-- script: |
     mocha test --reporter mocha-junit-reporter
-  displayName: 'npm test'
+  displayName: 'npm install and test'
 
 - task: PublishTestResults@2
   condition: succeededOrFailed()
