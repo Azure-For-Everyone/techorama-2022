@@ -22,9 +22,11 @@ Fork the repository `https://github.com/Azure-For-Everyone/techorama-2022`, give
 
 ![Forking into repo](./images/fork2.png)
 
-Once done clone the repository to your local system, and open the directory with Visual Studio Code (or your favourite IDE) and install the libraries using `npm install`.
+Once done clone the repository to your local system, open the directory an select the exercise according the number of eyes you have thrown. Open the exercise with Visual Studio Code (or your favourite IDE) and install the libraries using `npm install`.
 
 ![Clone](./images/clone.png)
+
+![Npm install](./images/npm-install.png)
 
 ## 3. Solve the challenge
 
