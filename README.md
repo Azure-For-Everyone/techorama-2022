@@ -32,6 +32,8 @@ Once done clone the repository to your local system, open the directory an selec
 
 Look into the `app` folder of your exercise, and try running the `npm test` command in your terminal. Ooooh oooh, things don't work, go and fix it ;).
 
+![Npm test](./images/npm-test.png)
+
 ## 4. You have fixed it
 
 Once you confirm `npm test` is working properly you can commit your fix and related pull request (PR). Your PR will trigger a Github action, and related Azure DevOps pipeline. Once the pipeline is done and succeeded, you will be granted a pair of cool sunglasses, a coin, and most importantly an unique chance to trigger the lottery machine.
