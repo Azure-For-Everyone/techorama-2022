@@ -9,5 +9,5 @@ exports.rgbToHex = function(red, green, blue) {
 
 
 function pad(hex) {
-    return "0" + hex;
+    return hex;
 }
