@@ -10,7 +10,7 @@ pr:
 - main
 
 variables:
-  exercise: '1'
+  exercise: $[ variables['Build.SourceVersionMessage']
 
 pool:
   vmImage: ubuntu-latest
