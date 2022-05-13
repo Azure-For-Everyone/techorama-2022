@@ -21,13 +21,16 @@ steps:
 - script: |
     cd exercise-1
     npm install
-    npm test
+    npm run test-report
   displayName: 'npm install and build'
+  failOnStderr: 'false'
 
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '**/TEST-*.xml'
+    failTaskOnFailedTests: true
+    
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: 'Cobertura'
