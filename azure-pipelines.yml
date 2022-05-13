@@ -25,4 +25,4 @@ steps:
   displayName: 'npm install'
 
 - script: |
-  mocha test --reporter mocha-junit-reporter
+    mocha test --reporter mocha-junit-reporter
