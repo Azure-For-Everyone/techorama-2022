@@ -21,7 +21,7 @@ steps:
 - script: |
     cd exercise-1
     npm install
-    npm build
+    npm run build
   displayName: 'npm install and build'
 
 - task: PublishTestResults@2
