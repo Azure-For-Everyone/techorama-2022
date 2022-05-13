@@ -38,7 +38,9 @@ Look into the `app` folder of your exercise, and try running the `npm test` comm
 
 ## 4. You have fixed it
 
-Once you confirm `npm test` is working properly you can commit your fix and related pull request (PR). Your PR will trigger a Github action, and related Azure DevOps pipeline. Once the pipeline is done and succeeded, you will be granted a pair of cool sunglasses, a coin, and most importantly an unique chance to trigger the lottery machine.
+Once you confirm `npm test` is working properly you can commit your fix and create pull request (PR). **The name of your PR will need to equal your exercise number: so 1,2,3,4,5 or 6**. Your PR will trigger a Github action, and related Azure DevOps pipeline. Once the pipeline is done and succeeded, you will be granted a pair of cool sunglasses, a coin, and most importantly an unique chance to trigger the lottery machine.
+
+![Pipeline](./images/pipeline.png)
 
 ## 5. The ultimate price
 
