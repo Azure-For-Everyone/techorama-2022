@@ -16,7 +16,7 @@ describe("Color Code Converter", function() {
         });
 
         // specification for RGB to HEX converter   
-        it("converts the basic colors", function() {
+        it("converts the basic colors2", function() {
             var redHex   = converter.rgbToHex(255, 128, 0);
             var greenHex = converter.rgbToHex(128, 255, 0);
             var blueHex  = converter.rgbToHex(128, 0, 255);
