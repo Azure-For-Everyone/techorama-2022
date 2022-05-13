@@ -14,6 +14,8 @@ With this challenge you will be presented a coding challenge. After solving the 
 
 Before you can get started hacking the challenge, you first need to throw the dice. The resulting eyes will tell you which challenge (1-6) you need to solve.
 
+![Dice](./images/dice.gif)
+
 ## 2. Open the exercise
 
 Fork the repository `https://github.com/Azure-For-Everyone/techorama-2022`, give it your own name (and company name).
