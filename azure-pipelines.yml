@@ -11,7 +11,7 @@ pr:
 
 variables:
   exercise: $[ variables['Build.SourceVersionMessage'] ]
-  exercisePR: $[ variables['Build.PullRequest.SourceBranch'] ]
+  exercisePR: $[ variables['System.PullRequest.SourceBranch'] ]
 
 pool:
   vmImage: ubuntu-latest
