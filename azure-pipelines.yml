@@ -9,6 +9,9 @@ trigger:
 pr:
 - main
 
+variables:
+  exercise: $[ variables['Build.SourceVersionMessage'] ]
+
 pool:
   vmImage: ubuntu-latest
 
@@ -23,21 +26,21 @@ steps:
     npm install
     npm run test-report
   displayName: 'Testing Exercise 1'
-  condition: eq(variables.Build.SourceVersionMessage, '1')
+  condition: eq(variables.exercise, '1')
 
 - script: |
     cd exercise-2
     npm install
     npm run test-report
   displayName: 'Testing Exercise 2'
-  condition: eq(variables.Build.SourceVersionMessage, '2')
+  condition: eq(exercise, '2')
 
 - script: |
     cd exercise-3
     npm install
     npm run test-report
   displayName: 'Testing Exercise 3'
-  condition: eq(variables.Build.SourceVersionMessage, '3')
+  condition: eq(exercise, '3')
 
 - task: PublishTestResults@2
   inputs:
