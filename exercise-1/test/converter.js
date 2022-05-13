@@ -1,12 +1,26 @@
-var assert = require('assert');
+describe("Color Code Converter", function() {
 
-describe('String', function () {
-    describe('#indexOf', function () {
-        it('should return -1 when the substring is not present', function () {
-            var myString = 'test';
+    describe("RGB to Hex conversion", function() {
+        // specification for RGB to HEX converter   
+        it("converts the basic colors", function() {
+            var redHex   = converter.rgbToHex(255, 0, 0);
+            var greenHex = converter.rgbToHex(0, 255, 0);
+            var blueHex  = converter.rgbToHex(0, 0, 255);
 
-            assert.equal(-1, myString.indexOf('x'));
-            assert.equal(-1, myString.indexOf('y'));
+            expect(redHex).to.equal("ff0000");
+            expect(greenHex).to.equal("00ff00");
+            expect(blueHex).to.equal("0000ff");
+        });
+
+        // specification for RGB to HEX converter   
+        it("converts the basic colors2", function() {
+            var redHex   = converter.rgbToHex(255, 128, 0);
+            var greenHex = converter.rgbToHex(128, 255, 0);
+            var blueHex  = converter.rgbToHex(128, 0, 255);
+
+            expect(redHex).to.equal("ff8000");
+            expect(greenHex).to.equal("80ff00");
+            expect(blueHex).to.equal("8000ff");
         });
     });
 });
