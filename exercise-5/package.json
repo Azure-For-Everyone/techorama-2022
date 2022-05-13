@@ -1,0 +1,19 @@
+{
+  "name": "exercise-5",
+  "version": "1.0.0",
+  "description": "The figth exercise of the coding challenge",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "express": "^4.18.1",
+    "mocha": "^9.2.2",
+    "nyc": "^15.0.2",
+    "mocha-junit-reporter": "^1.12.0"
+  },
+  "scripts": {
+    "test": "mocha test",
+    "test-report": "nyc --reporter=cobertura --reporter=html ./node_modules/.bin/mocha test/**/*.js --reporter mocha-junit-reporter --reporter-options mochaFile=./TEST-RESULTS.xml"
+  }
+}

@@ -1,4 +1,4 @@
-# Exercise 1
+# Exercise 2
 
 When developing webapps or websites, we like to have a good looking and clean design. To achieve this, the concept of styling through CSS is an important aspect in creating a sleek user experience (UX). When styling on the web we can use different color formats such as RGB (Red Green Blue) colors and HEX (Hexadecimal) colors. RGB and HEX colors can be used alternately, which means that each RGB color can be represented as a HEX color and vice versa.
 
