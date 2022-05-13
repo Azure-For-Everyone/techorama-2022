@@ -37,7 +37,7 @@ steps:
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '**/TEST-*.xml'
-    failTaskOnFailedTests: true
+    failTaskOnFailedTests: false
     
 - task: PublishCodeCoverageResults@1
   inputs:
