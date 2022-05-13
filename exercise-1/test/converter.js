@@ -1,3 +1,4 @@
+var expect    = require("chai").expect;
 
 describe("Color Code Converter", function() {
 
