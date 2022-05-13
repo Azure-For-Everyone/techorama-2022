@@ -4,10 +4,13 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- **
+- main
 
 pr:
-- **
+- main
+
+variables:
+  exercise: '1'
 
 pool:
   vmImage: ubuntu-latest
@@ -23,14 +26,14 @@ steps:
     npm install
     npm run test-report
   displayName: 'Testing Exercise 1'
-  continueOnError: true
+  condition: eq(variables.exercise, '1')
 
 - script: |
     cd exercise-2
     npm install
     npm run test-report
   displayName: 'Testing Exercise 2'
-  continueOnError: true
+  condition: eq(variables.exercise, '2')
 
 
 - task: PublishTestResults@2
