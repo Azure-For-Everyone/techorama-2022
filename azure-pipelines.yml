@@ -10,22 +10,19 @@ pr:
 - main
 
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: ubuntu-latest
 
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '8.x'
+    versionSpec: '10.x'
   displayName: 'Install Node.js'
 
 - script: |
     cd exercise-1
+    npm install -g mocha
     npm install
-    npm run test
-  displayName: 'npm install and test'
+  displayName: 'npm install'
 
-- task: PublishTestResults@2
-  condition: succeededOrFailed()
-  inputs:
-    testRunner: JUnit
-    testResultsFiles: '**/test-results.xml'
+- script: |
+  mocha test --reporter mocha-junit-reporter
