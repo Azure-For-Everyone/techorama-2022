@@ -27,6 +27,7 @@ steps:
     npm install
     npm run test-report
   displayName: 'Testing Exercise 1'
+  continueOnError: true
   condition: or(eq(variables.exercise, '1'),eq(variables.exercisePR, '1'))
 
 - script: |
@@ -34,6 +35,7 @@ steps:
     npm install
     npm run test-report
   displayName: 'Testing Exercise 2'
+  continueOnError: true
   condition: or(eq(variables.exercise, '2'),eq(variables.exercisePR, '2'))
 
 - script: |
@@ -41,13 +43,14 @@ steps:
     npm install
     npm run test-report
   displayName: 'Testing Exercise 3'
+  continueOnError: true
   condition: or(eq(variables.exercise, '3'),eq(variables.exercisePR, '3'))
 
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '**/TEST-*.xml'
-    failTaskOnFailedTests: false
+    failTaskOnFailedTests: true
     
 - task: PublishCodeCoverageResults@1
   inputs:
