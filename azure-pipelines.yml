@@ -22,8 +22,16 @@ steps:
     cd exercise-1
     npm install
     npm run test-report
-  displayName: 'npm install and build'
+  displayName: 'Testing Exercise 1'
   continueOnError: true
+
+- script: |
+    cd exercise-2
+    npm install
+    npm run test-report
+  displayName: 'Testing Exercise 2'
+  continueOnError: true
+
 
 - task: PublishTestResults@2
   inputs:
