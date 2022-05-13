@@ -4,7 +4,7 @@
   "description": "The first exercise of the coding challenge",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test --reporter mocha-junit-reporter"
+    "test": "mocha test"
   },
   "author": "",
   "license": "ISC",
