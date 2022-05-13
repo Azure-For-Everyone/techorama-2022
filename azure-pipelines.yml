@@ -22,7 +22,5 @@ steps:
     cd exercise-1
     npm install -g mocha
     npm install
-  displayName: 'npm install'
-
-- script: |
     mocha test --reporter mocha-junit-reporter
+  displayName: 'npm install'
