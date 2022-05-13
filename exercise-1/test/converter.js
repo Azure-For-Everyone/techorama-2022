@@ -22,5 +22,17 @@ describe("Color Code Converter", function() {
             expect(blueHex).to.equal("0000ff");
         });
 
+
+        // specification for RGB to HEX converter   
+        it("convert some special colors", function() {
+            var redHex   = converter.rgbToHex(255, 128, 0);
+            var greenHex = converter.rgbToHex(128, 255, 0);
+            var blueHex  = converter.rgbToHex(128, 0, 255);
+
+            expect(redHex).to.equal("ff8000");
+            expect(greenHex).to.equal("80ff00");
+            expect(blueHex).to.equal("8000ff");
+        });
+
     });
 });
