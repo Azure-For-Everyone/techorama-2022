@@ -8,6 +8,8 @@ Welcome to the Microsoft booth @ Techorama 2022. Are you ready to play a game, a
 
 With this challenge you will be presented a coding challenge. After solving the coding challenge, we will verify if your solution is correct against a CI/CD pipeline in Azure DevOps. Once the build succeeds, you are invited the trigger the lottery machine. If you hit the 3 same symbols, BOOOOM!, you win a super cool Surface headphone or free Microsoft examn voucher.
 
+https://techorama2022.grayglacier-59d5c06c.westeurope.azurecontainerapps.io/
+
 ![Lottery game](./images/lottery.png)
 
 ## 1. Throw the dice
