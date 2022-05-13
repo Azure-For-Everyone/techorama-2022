@@ -32,6 +32,12 @@ steps:
   displayName: 'Testing Exercise 2'
   condition: eq(variables.Build.SourceVersionMessage, '2')
 
+- script: |
+    cd exercise-3
+    npm install
+    npm run test-report
+  displayName: 'Testing Exercise 3'
+  condition: eq(variables.Build.SourceVersionMessage, '3')
 
 - task: PublishTestResults@2
   inputs:
