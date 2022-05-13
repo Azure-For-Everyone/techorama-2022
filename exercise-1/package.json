@@ -3,17 +3,16 @@
   "version": "1.0.0",
   "description": "The first exercise of the coding challenge",
   "main": "index.js",
-  "scripts": {
-    "test": "mocha test"
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.3.6",
     "express": "^4.18.1",
     "mocha": "^10.0.0",
-    "mocha-junit-reporter": "^2.0.2",
-    "mocha-multi-reporters": "^1.5.1",
-    "nyc": "^15.1.0"
+    "nyc": "^15.0.2",
+    "mocha-junit-reporter": "^1.12.0"
+  },
+  "scripts": {
+    "build": "nyc --reporter=cobertura --reporter=html ./node_modules/.bin/mocha tests/**/*.js --reporter mocha-junit-reporter --reporter-options mochaFile=./TEST-RESULTS.xml"
   }
 }

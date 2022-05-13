@@ -20,7 +20,15 @@ steps:
 
 - script: |
     cd exercise-1
-    npm install -g mocha
     npm install
-    npm test
-  displayName: 'npm install'
+    npm build
+  displayName: 'npm install and build'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: 'Cobertura'
+    summaryFileLocation: 'coverage/cobertura-coverage.xml'
