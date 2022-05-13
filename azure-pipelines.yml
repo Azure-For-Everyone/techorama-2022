@@ -11,6 +11,7 @@ pr:
 
 variables:
   exercise: $[ variables['Build.SourceVersionMessage'] ]
+  exercisePR: $[ variables['Build.PullRequest.SourceVersionMessage'] ]
 
 pool:
   vmImage: ubuntu-latest
@@ -26,7 +27,7 @@ steps:
     npm install
     npm run test-report
   displayName: 'Testing Exercise 1'
-  condition: eq(variables.exercise, '1')
+  condition: or(eq(variables.exercise, '1'),eq(variables.exercisePR, '1'))
 
 - script: |
     cd exercise-2
