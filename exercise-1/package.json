@@ -13,6 +13,7 @@
     "mocha-junit-reporter": "^1.12.0"
   },
   "scripts": {
-    "build": "nyc --reporter=cobertura --reporter=html ./node_modules/.bin/mocha tests/**/*.js --reporter mocha-junit-reporter --reporter-options mochaFile=./TEST-RESULTS.xml"
+    "test": "mocha test",
+    "test-report": "nyc --reporter=cobertura --reporter=html ./node_modules/.bin/mocha test/**/*.js --reporter mocha-junit-reporter --reporter-options mochaFile=./TEST-RESULTS.xml"
   }
 }
