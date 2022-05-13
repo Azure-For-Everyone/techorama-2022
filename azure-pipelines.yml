@@ -46,6 +46,30 @@ steps:
   continueOnError: true
   condition: or(eq(variables.exercise, '3'),eq(variables.exercisePR, '3'))
 
+- script: |
+    cd exercise-4
+    npm install
+    npm run test-report
+  displayName: 'Testing Exercise 4'
+  continueOnError: true
+  condition: or(eq(variables.exercise, '4'),eq(variables.exercisePR, '4'))
+
+- script: |
+    cd exercise-5
+    npm install
+    npm run test-report
+  displayName: 'Testing Exercise 5'
+  continueOnError: true
+  condition: or(eq(variables.exercise, '5'),eq(variables.exercisePR, '5'))
+
+- script: |
+    cd exercise-6
+    npm install
+    npm run test-report
+  displayName: 'Testing Exercise 6'
+  continueOnError: true
+  condition: or(eq(variables.exercise, '6'),eq(variables.exercisePR, '6'))
+
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
