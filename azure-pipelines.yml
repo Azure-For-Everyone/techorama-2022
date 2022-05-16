@@ -28,7 +28,7 @@ steps:
     npm run test-report
   displayName: 'Testing Exercise 1'
   continueOnError: true
-  condition: or(eq(variables.exercise, '1'),eq(variables.exercisePR, '1'))
+  condition: or(eq(variables.exercise, '1'),contains(variables.exercisePR, '1'))
 
 - script: |
     cd exercise-2
@@ -36,7 +36,7 @@ steps:
     npm run test-report
   displayName: 'Testing Exercise 2'
   continueOnError: true
-  condition: or(eq(variables.exercise, '2'),eq(variables.exercisePR, '2'))
+  condition: or(eq(variables.exercise, '2'),contains(variables.exercisePR, '2'))
 
 - script: |
     cd exercise-3
@@ -44,7 +44,7 @@ steps:
     npm run test-report
   displayName: 'Testing Exercise 3'
   continueOnError: true
-  condition: or(eq(variables.exercise, '3'),eq(variables.exercisePR, '3'))
+  condition: or(eq(variables.exercise, '3'),contains(variables.exercisePR, '3'))
 
 - script: |
     cd exercise-4
@@ -52,7 +52,7 @@ steps:
     npm run test-report
   displayName: 'Testing Exercise 4'
   continueOnError: true
-  condition: or(eq(variables.exercise, '4'),eq(variables.exercisePR, '4'))
+  condition: or(eq(variables.exercise, '4'),contains(variables.exercisePR, '4'))
 
 - script: |
     cd exercise-5
@@ -60,7 +60,7 @@ steps:
     npm run test-report
   displayName: 'Testing Exercise 5'
   continueOnError: true
-  condition: or(eq(variables.exercise, '5'),eq(variables.exercisePR, '5'))
+  condition: or(eq(variables.exercise, '5'),contains(variables.exercisePR, '5'))
 
 - script: |
     cd exercise-6
@@ -68,7 +68,7 @@ steps:
     npm run test-report
   displayName: 'Testing Exercise 6'
   continueOnError: true
-  condition: or(eq(variables.exercise, '6'),eq(variables.exercisePR, '6'))
+  condition: or(eq(variables.exercise, '6'),contains(variables.exercisePR, '6'))
 
 - task: PublishTestResults@2
   inputs:
