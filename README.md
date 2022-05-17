@@ -43,7 +43,7 @@ Once you confirm `npm test` is working properly you can commit your fix. First c
 
 ![Publish branch](./images/4-publish.png)
 
-Once published, and comitted our fix, we can go ahead an make a pull request (PR) to the remote branch. Select the PR icon on the top.
+Once published, and committed your fix, we can go ahead an make a pull request (PR) to the remote branch. Select the PR icon on the top.
 
 ![Create PR](./images/5-createpr.png)
 
