@@ -10,7 +10,7 @@ With this challenge you will be presented a coding challenge. After solving the 
 
 https://techorama2022.grayglacier-59d5c06c.westeurope.azurecontainerapps.io/
 
-![Lottery game](./images/lottery.png)
+![Lottery game](./images/lottery-game.gif)
 
 ## 1. Throw the dice
 
@@ -59,6 +59,8 @@ Specify a title for the PR and press the create button at the bottom.
 Your resulting pipeline will be shown infront of you.
 
 ## 5. The ultimate price
+
+![Lottery game](./images/lottery-game.gif)
 
 If you are so lucky and you got 3 symbols displayed you will win a Surface Headphones or a free examn voucher.
 
