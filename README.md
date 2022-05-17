@@ -25,7 +25,7 @@ Open the Visual Studio Code editor and create a new branch.
 ![Open Visual Studio Code](./images/1-open.png)
 ![Create a new branch](./images/2-createbranch.png)
 
-You will need to give the branch a proper name. Please choose your **firstname** and *company name** and **!!VERY IMPORTANT!!** add a suffix **-ex1**, **-ex2**, **-ex3**, **-ex4**, **-ex5** or **-ex6** depending the exercise you are going to solve. If you don't do this, Azure DevOps will not be able to validate your solution.
+You will need to give the branch a proper name. Please choose your **firstname** and **company name** and **!!VERY IMPORTANT!!** add a suffix **-ex1**, **-ex2**, **-ex3**, **-ex4**, **-ex5** or **-ex6** depending the exercise you are going to solve. If you don't do this, Azure DevOps will not be able to validate your solution.
 
 ![Branch name](./images/3-branchname.png)
 
