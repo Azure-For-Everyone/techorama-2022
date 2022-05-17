@@ -20,17 +20,14 @@ Before you can get started hacking the challenge, you first need to throw the di
 
 ## 2. Open the exercise
 
-Fork the repository `https://github.com/Azure-For-Everyone/techorama-2022`, give it your own name (and company name).
+Open the Visual Studio Code editor and create a new branch.
 
-![Fork](./images/fork.png)
+![Open Visual Studio Code](./images/1-open.png)
+![Create a new branch](./images/2-createbranch.png)
 
-![Forking into repo](./images/fork2.png)
+You will need to give the branch a proper name. Please choose your **firstname** and *company name** and **!!VERY IMPORTANT!!** add a suffix **-ex1**, **-ex2**, **-ex3**, **-ex4**, **-ex5** or **-ex6** depending the exercise you are going to solve. If you don't do this, Azure DevOps will not be able to validate your solution.
 
-Once done clone the repository to your local system, open the directory an select the exercise according the number of eyes you have thrown. Open the exercise with Visual Studio Code (or your favourite IDE) and install the libraries using `npm install`.
-
-![Clone](./images/clone.png)
-
-![Npm install](./images/npm-install.png)
+![Branch name](./images/3-branchname.png)
 
 ## 3. Solve the challenge
 
@@ -42,11 +39,27 @@ Look into the `app` folder of your exercise, and try running the `npm test` comm
 
 ## 4. You have fixed it
 
-Once you confirm `npm test` is working properly you can commit your fix and create a pull request (PR). **!!! The name of your PR will needs to equal your exercise number: so 1,2,3,4,5 or 6 !!!**. Your PR will trigger a Github action, and related Azure DevOps pipeline. Once the pipeline is done and succeeded, you will be granted a pair of cool sunglasses, a coin, and most importantly an unique chance to trigger the lottery machine.
+Once you confirm `npm test` is working properly you can commit your fix. First commit your changes into your branch and publish it. Make sure to use the right remote (first one).
+
+![Publish branch](./images/4-publish.png)
+
+Once published, and comitted our fix, we can go ahead an make a pull request (PR) to the remote branch. Select the PR icon on the top.
+
+![Create PR](./images/5-createpr.png)
+
+Specify a title for the PR and press the create button at the bottom.
+
+![Push PR](./images/6-pushpr.png)
+![COnfirm PR](./images/7-confirmpr.png)
+
+ So what happens now? Your PR will trigger a Github action, and related Azure DevOps pipeline. Once the pipeline is done and succeeded, you will be granted a pair of cool sunglasses, a coin, and most importantly an unique chance to trigger the lottery machine.
 
 ![Pipeline](./images/pipeline.png)
+
+Your resulting pipeline will be shown infront of you.
 
 ## 5. The ultimate price
 
 If you are so lucky and you got 3 symbols displayed you will win a Surface Headphones or a free examn voucher.
 
+![Surface Headphones 2](./images/surface-headphones.png)
