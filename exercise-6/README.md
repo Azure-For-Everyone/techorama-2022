@@ -1,18 +1,15 @@
 # Exercise 6
 
-When developing webapps or websites, we like to have a good looking and clean design. To achieve this, the concept of styling through CSS is an important aspect in creating a sleek user experience (UX). When styling on the web we can use different color formats such as RGB (Red Green Blue) colors and HEX (Hexadecimal) colors. RGB and HEX colors can be used alternately, which means that each RGB color can be represented as a HEX color and vice versa.
+Spreading messages over the internet, using social media, is part of our daily lifes. It's all because we think communication and sharing knowledge is key, and it helps us becoming a better version of ourselves. We can all write books describing our past experiences and our future ideas, but unfortunately we have to be brief and pick the right words and sentences when communicating. 
 
-## An example: 
+If we look at Twitter, they took this really serious. When writing a Twitter post you can only write messages of 280 characters long (and before even less). This idea made Twitter successfull, but also improved us as communicators. Using less words and even make more impact. Having this limitation of 280 characters could make us better communicators, so wouldn't it be cool if we have this function that can warn us when we are to verbose is our communication? Let's have a look!
 
-An RGB color is composed of a tripplet which contains values from 0 to 255. The color blue in RGB format looks like `[0,0,255]`, so a max value for the blue value. By playing with the range of each R,G,B component you can display any color you prefer.
-
-The same RGB color can be represented in the HEX color equivalent. To convert a RGB color to a HEX color each R,G,B segment needs to be converted by a hexidecimal **with a leading 0** if only 1 character long. Converting the blue color `[0,0,255]` to hex color, as explained above, will look like `[00,00,ff]`. Once converted each segment is concatenated and prefix by a `#`. After doing this the official HEX color for blue will look like `#0000ff`.
-
+![Twitter](../images/twitter.png)
 
 # The challenge
 
-Within this project `app` folder you will find a `converter.js`. In this file you will find a `rgbToHex` function that is responsible for transforming a RGB color to a HEX color. Try running the `npm test` command in the terminal to see if the converter is working as expected.
+Within this project `app` folder you will find a `message.js`. In this file you will find a `countCharacters` function that will verify if your post is a valid Twitter post, and more precisely if it isn't too long. Try running the `npm test` command in the terminal to see if the converter is working as expected.
 
 # The problem
 
-As you might have noticed, something is not working, and that is REALLY annoying. I bet something is going wrong in the `pad` function, but not sure ;). Can you help solving this issue?
+As you might have noticed, something is not working, and that is REALLY annoying. Something is going wrong in this `countCharacters` function ;). Can you help solving this issue?
