@@ -2,14 +2,14 @@
 
 Everyone loves a palindrome right, we use it everyday. Hmm? Not really, but to be honest some of them are cool like this one. This year we had this special data **22/02/2022** (22th of february in 2022). Nice palemdroom isn't it? 
 
-Of course more palindromes like:
+Of course thera are a lot more palindromes like:
 
 - Madam
 - Racecar
 - Level
 - and much more.
 
-Palindromes are everywhere, but can we develop a function that calculates a palindrome? Yes I believe so.
+Palindromes are everywhere, but can we develop a function that verifies if a world is a valid palindrome? Yes I believe so.
 
 ![Palimdrome](../images/palindrome.jpg)
 
