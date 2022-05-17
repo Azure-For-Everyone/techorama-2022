@@ -1,5 +1,5 @@
 # build environment
-FROM node:13.12.0-alpine as build
+FROM azureforeveryoneregistry.azurecr.io/node:13.12.0-alpine as build
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 COPY lottery-game/package.json ./
@@ -10,7 +10,7 @@ COPY lottery-game ./
 RUN npm run build
 
 # production environment
-FROM nginx:stable-alpine
+FROM azureforeveryoneregistry.azurecr.io/nginx:stable-alpine
 COPY --from=build /app/build /usr/share/nginx/html
 # new
 COPY nginx.conf /etc/nginx/conf.d/default.conf
