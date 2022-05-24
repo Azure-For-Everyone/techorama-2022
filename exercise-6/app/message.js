@@ -2,9 +2,10 @@
 
 exports.countCharacters = function(word) {
     let length = 0;
+    console.log(word.length);
     for (let i = 0; i < word.length; i++) {
-        length = length
+        length += i;
     }
-    return length;
+    return word.length;
 };
 
