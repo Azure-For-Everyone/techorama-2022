@@ -1,5 +1,7 @@
 // app/age.js
 
+const secondsInAYear = 31536000;
+
 exports.ageToSeconds = function(years) {
-    return 60 * 24 * 365 * years
+    return secondsInAYear * years;
 };
