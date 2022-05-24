@@ -1,7 +1,7 @@
 // app/size.js
 
 function squareMeters(length, width){
-    return length + width
+    return length * width
 }
 
 exports.getSquares = function(length, width) {
@@ -13,5 +13,5 @@ exports.getAres = function(length, width) {
 };
 
 exports.getHectares = function(length, width) {
-    return squareMeters(length, width) / 1000;
+    return squareMeters(length, width) / 100 / 100;
 };
