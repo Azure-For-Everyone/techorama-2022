@@ -2,7 +2,7 @@
 
 Spreading messages over the internet, using social media, is part of our daily lifes. It's all because we think communication and sharing knowledge is key, and it helps us becoming a better version of ourselves. We can all write books describing our past experiences and our future ideas, but unfortunately we have to be brief and pick the right words and sentences when communicating. 
 
-If we look at Twitter, they took this really serious. When writing a Twitter post you can only write messages of 280 characters long (and before even less). This idea made Twitter successfull, but also improved us as communicators. Using less words and even make more impact. Having this limitation of 280 characters could make us better communicators, so wouldn't it be cool if we have this function that can warn us when we are to verbose is our communication? Let's have a look!
+If we look at Twitter, they took this really serious. When writing a Twitter post you can only write messages of 280 characters long (and before even less). This idea made Twitter successful, but also improved us as communicators. Using less words and even make more impact. Having this limitation of 280 characters could make us better communicators, so wouldn't it be cool if we have this function that can warn us when we are too verbose in our communication? Let's have a look!
 
 ![Twitter](../images/twitter.png)
 
