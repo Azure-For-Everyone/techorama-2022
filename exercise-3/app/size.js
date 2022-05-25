@@ -4,6 +4,7 @@ function squareMeters(length, width){
     return length * width
 }
 
+
 exports.getSquares = function(length, width) {
     return squareMeters(length, width)
 };
